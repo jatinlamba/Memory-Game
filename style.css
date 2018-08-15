@@ -1,0 +1,121 @@
+#game-board{
+  text-align: center;
+  width: 205vh;
+  margin-top: 3vh;
+  background: #FDC409;
+}
+
+.board {
+  width: 18vh;
+  height: 28vh;
+  margin: 0.25vh;
+  display: inline-block;
+  border: 1px solid #bbb;
+  border-radius: 15px;
+  padding: 0.75vh;
+  font-size: 5em;
+  background-image: url("https://s3.us-east-2.amazonaws.com/img-game/Capture1.JPG?versionId=null");
+  background-size: 22vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s ease;
+}
+
+.board-flip {
+  transform: rotateY(360deg);
+}
+  
+.card-img {
+  width: auto;
+  height: 85vh;
+  margin-bottom: -5vh;
+}
+
+.game-stats {
+  color: #0E37BF;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  padding-right: 0;
+}
+
+.modal-content {
+  width: 996px !important;
+  height: 80vh;
+  margin-left: -35vh;
+  background-image: url(https://s3.us-east-2.amazonaws.com/img-game/Capture.png);
+}
+
+.modal-body {
+  width: 1020px !important;
+  height: 150vh;
+  margin-left: -18vh;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #DD4B39;
+    color: white;
+}
+
+.column{
+  width: 36vh;
+  float: left;
+  margin-left: 18vh;
+  display: inline-block;
+}
+
+#countdown {
+  position: relative;
+  margin: auto;
+  margin-top: 10px;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+}
+svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  transform: rotateY(-180deg) rotateZ(-90deg);
+}
+
+svg circle {
+  stroke-dasharray: 113px;
+  stroke-dashoffset: 0px;
+  stroke-linecap: round;
+  fill: red;
+  animation: progress 300s linear infinite forwards;
+}
+
+@keyframes progress {
+  from {
+    stroke-dashoffset: 0px;
+  }
+  to {
+    stroke-dashoffset: 113px;
+  }
+}
+
